@@ -54,9 +54,4 @@ Until then, the static site remains accessible via:
 https://ridharesumestorage.z13.web.core.windows.net/
 ```
 
----
 
-## ✅ Key Takeaway
-Even though the CDN could not be deployed due to account limits, the configuration was prepared and tested via Terraform. This shows forward planning, readiness for scaling, and understanding of enterprise-level architecture.
-
-The repo remains clean and ready to apply when CDN becomes available.
