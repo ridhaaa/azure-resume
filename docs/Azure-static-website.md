@@ -6,10 +6,10 @@ Deploy a static portfolio/resume website using Azure Storage Account (static web
 ---
 
 ## 🛠️ Tools Used
-- **Terraform**: Infrastructure as Code
-- **Azure CLI**: Authentication and resource verification
-- **Azure Portal**: Manual verification and access setup
-- **HTML/CSS**: Personal resume website
+- **Terraform**
+- **Azure CLI**
+- **Azure Portal**
+- **HTML/CSS**
 
 ---
 
@@ -71,14 +71,12 @@ Website was publicly hosted at:
 ```
 https://ridharesumestorage.z13.web.core.windows.net/
 ```
+
+![Static website overview](./screenshots/static-website-html.png)
+
 Accessible globally via Azure Static Website.
 
-![Running website](./screenshots/static-website-html.png)
+![live website](./screenshots/running-website.png)
 
 ---
 
-## ✅ Key Learnings
-- Azure Static Website can serve HTML/CSS with no server.
-- Terraform helps document and automate infra cleanly.
-- Azure CLI is useful for bulk blob upload and automation.
-- Permissions (RBAC) are required for data access, not just control-plane access.
