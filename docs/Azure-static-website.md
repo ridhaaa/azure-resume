@@ -42,6 +42,8 @@ resource "azurerm_storage_account" "resume_storage" {
   }
 }
 ```
+![Storage Account Overview](./screenshots/storage-overview.png)
+
 
 ---
 
@@ -55,6 +57,10 @@ az storage blob upload-batch \
   --source "C:\Users\hp\Dropbox\PC\Desktop\Cloud Resume\portfolio" \
   --auth-mode login
 ```
+![Upload](./screenshots/blob-upload-result.png)
+
+Container is created: 
+![web container](./screenshots/web-container.png)
 
 > ⚠️ Ensure that the user has the **Storage Blob Data Contributor** role assigned to upload successfully.
 
@@ -66,6 +72,8 @@ Website was publicly hosted at:
 https://ridharesumestorage.z13.web.core.windows.net/
 ```
 Accessible globally via Azure Static Website.
+
+![Running website](./screenshots/static-website-html.png)
 
 ---
 
