@@ -1,4 +1,4 @@
-# ☁️ Cloud Resume Challenge (Azure)
+# ☁️ Cloud Resume 
 
 Deploying a resume website on Azure using Terraform, GitHub Actions, and Application Insights. Focused on infrastructure, automation, and monitoring.
 
@@ -59,9 +59,17 @@ cloud-resume/
 │   ├── style.css
 │   └── images/             
 │
-├── docs/                   
-│   └── Azure-static-website.md
+├── docs/
+|   ├── screenshots
+│   ├── azure-static-website.md        
+│   ├── azure-cdn.md                    
+│   ├── visitor-counter.md              
+│   ├── monitoring-alerts.md           
+│   └── github-actions.md 
 │
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 └── README.md               
 
 ```
