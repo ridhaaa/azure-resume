@@ -76,7 +76,7 @@ cloud-resume/
 ---
 ## 🗺️ Architecture Diagram
 
-![Architecture Diagram](..\portfolio\images\resume-architecture.png)
+![Architecture Diagram](portfolio/images/resume-architecture.png)
 
 --- 
 ## 📸 Screenshots
@@ -88,7 +88,6 @@ Located in [`docs/screenshots/`](docs/screenshots/), including:
 - Function test via Postman  
 - GitHub Actions deploy log  
 - Application Insights traces  
-- Architecture diagram
 
 ---
 
