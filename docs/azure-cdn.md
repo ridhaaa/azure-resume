@@ -11,7 +11,7 @@ While deployng Azure CDN using Terraform, the following error occured:
 ```plaintext
 Error: creating Profile: (Name "cdn-ridha-resume" / Resource Group "cloud-resume-rg"): cdn.ProfilesClient#Create: Failure sending request: StatusCode=400 -- Original Error: Code="BadRequest" Message="Free Trial and Student account is forbidden for Azure Frontdoor resources."
 ```
-![Error](../screenshots/error-cdn.png)
+![Error](screenshots/error-cdn.png)
 
 This occurred because Azure CDN (FrontDoor SKU) is **not supported under Free Trial or Student subscriptions**.
 
