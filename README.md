@@ -47,21 +47,23 @@ Deploying a resume website on Azure using Terraform, GitHub Actions, and Applica
 
 ```plaintext
 cloud-resume/
-├── README.md
-├── terraform/
+├── terraform/               
 │   ├── main.tf
-│   ├── variables.tf
+│   ├── provider.tf
 │   ├── outputs.tf
-│   └── backend.tf
-├── function/
-│   └── counter/
-│       ├── __init__.py
-│       └── function.json
-├── infra/
-│   └── screenshots/
-└── .github/
-    └── workflows/
-        └── deploy.yml
+|   └── variables.tf    
+
+├── portfolio/              
+│   ├── index.html
+│   ├── secure-upload.html
+│   ├── style.css
+│   └── images/             
+│
+├── docs/                   
+│   └── Azure-static-website.md
+│
+└── README.md               
+
 ```
 ## 📸 Screenshots
 
