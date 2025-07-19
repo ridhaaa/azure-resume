@@ -73,9 +73,15 @@ cloud-resume/
 └── README.md               
 
 ```
+---
+## 🗺️ Architecture Diagram
+
+![Architecture Diagram](..\portfolio\images\resume-architecture.png)
+
+--- 
 ## 📸 Screenshots
 
-Located in [`infra/screenshots/`](infra/screenshots/), including:
+Located in [`docs/screenshots/`](docs/screenshots/), including:
 
 - Terraform apply success  
 - Live resume on Blob + CDN  
