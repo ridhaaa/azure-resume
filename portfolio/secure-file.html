@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure File Upload System</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Secure File Upload System</h1>
+    <nav>
+      <a href="index.html">← Back to Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>Deploy and secure a file upload system on Azure using Blob Storage, Key Vault, NSG, and RBAC. This project showcases real-world cloud infrastructure setup with a focus on secure access, documentation, and modular deployment.</p>
+    </section>
+
+    <section>
+      <h2>Architecture Diagram</h2>
+      <img src="images/file-architecture.png" alt="Secure Upload Architecture" />
+    </section>
+
+    <section>
+      <h2>Tech Stack</h2>
+      <ul>
+        <li>Azure CLI & Portal</li>
+        <li>Azure Blob Storage</li>
+        <li>Azure Key Vault</li>
+        <li>NSG, VNet, IAM (RBAC)</li>
+        <li>GitHub (Version Control)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tasks Completed</h2>
+      <ul>
+        <li>Created Resource Group</li>
+        <li>Deployed Linux VM (Portal)</li>
+        <li>Set up Virtual Network, Subnets, NSG</li>
+        <li>Created Storage Account + Blob Container</li>
+        <li>Uploaded and downloaded test files manually</li>
+        <li>Created Key Vault and added secret</li>
+        <li>Assigned RBAC roles (Reader/Contributor)</li>
+        <li>Restricted blob access using IAM + Key Vault</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Learnings</h2>
+      <ul>
+        <li>Applied secure access control using Azure RBAC + Key Vault</li>
+        <li>Understanding of VNet, NSG, and IAM role configurations</li>
+        <li>Practical experience with Azure CLI + Portal workflows</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cleanup Command</h2>
+      <pre><code>az group delete --name resource-group-name --yes</code></pre>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li><a href="https://learn.microsoft.com/en-us/azure/storage/blobs/" target="_blank">Azure Storage Blobs</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/key-vault/general/rbac-guide" target="_blank">Azure Key Vault RBAC</a></li>
+        <li><a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-auth" target="_blank">Secure Azure Storage Access</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ridha Mariyam</p>
+  </footer>
+</body>
+</html>
