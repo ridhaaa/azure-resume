@@ -10,6 +10,7 @@ Azure Blob Storage was configured with **Diagnostic Settings** to forward logs t
   - `StorageRead`, `StorageWrite`, `StorageDelete`
   - `StorageBlobLogs`
 - **Destination**: Default Log Analytics workspace (auto-created by Azure)
+  
 ![ Alt text](./screenshots/monitor-diagnostic-overview.png)
 
 ---
@@ -49,18 +50,10 @@ The Logic App was manually configured from the Azure portal using the blank logi
 ![ Alt text](./screenshots/logic-app.png)
 
 ---
-### 📈 Metrics Monitoring
-
-Azure Metrics Explorer was used to visualize:
-![ Alt text](./screenshots/monitor-metrics.png)
-
-This helped validate when the blob operations were active and correlate with error logs.
-
----
-
 ### 🧪 Testing Alerts
 
 The alert was tested by simulating an unauthorized upload (RBAC-denied user). It triggered successfully and email was received from Logic App.
+
 ![ Alt text](./screenshots/monitor-test-denied.png)
 
 ---
@@ -71,5 +64,19 @@ To ensure only specific roles can write to Blob Storage:
 - Blob Contributor role was removed.
 - Upload attempts by this user resulted in alerts and failed logs.
 - Validated the alerting pipeline end-to-end.
+
+![ Alt text](./screenshots/role-assignment.png)
+
+---
+### 📈 Metrics Monitoring
+
+Azure Metrics Explorer was used to visualize:
+
+![ Alt text](./screenshots/monitor-metrics.png)
+
+This helped validate when the blob operations were active and correlate with error logs.
+
+---
+
 
 
