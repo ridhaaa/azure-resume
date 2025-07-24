@@ -61,9 +61,8 @@ The alert was tested by simulating an unauthorized upload (RBAC-denied user). It
 
 To ensure only specific roles can write to Blob Storage:
 - A test user was created in Azure AD.
-- Blob Contributor role was removed.
+- Only Reader access were given.
 - Upload attempts by this user resulted in alerts and failed logs.
-- Validated the alerting pipeline end-to-end.
 
 ![ Alt text](./screenshots/role-assignment.png)
 
