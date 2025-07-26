@@ -12,8 +12,6 @@ Deployed a resume website on Azure using Terraform. Addtionally used monitoring 
 - Enabled Azure Monitor and configured alerting with Logic Apps
 - Enforced tagging standards via Azure Policy
 - Applied Role-Based Access Control (RBAC) for scoped permissions
-- Attempted CDN
-
 
 ---
 
