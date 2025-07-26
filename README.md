@@ -79,6 +79,14 @@ cloud-resume/
 ![Architecture Diagram](portfolio/images/resume-architecture.png)
 
 --- 
+🧭 Documentation Breakdown
+Documented in `docs/` folder:
+- `azure-static-website.md` — Blob config, DNS mapping
+- `azure-cdn.md` — CDN setup attempt and blockers
+- `monitor-alerts.md` — Monitor, Logic Apps, metrics results
+- `azure-policy.md` — Tag policy setup and compliance validation
+  
+---
 ## 📸 Screenshots
 
 Located in [`docs/screenshots/`](docs/screenshots/)
