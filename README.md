@@ -1,45 +1,54 @@
 # ☁️ Cloud Resume 
 
-Deploying a resume website on Azure using Terraform, GitHub Actions, and Application Insights. Focused on infrastructure, automation, and monitoring.
+Deployed a resume website on Azure using Terraform. Addtionally used monitoring and policy enforcement.
 
 ---
 
 ## 📌 Overview
 
-- Static site hosted via Azure Blob + CDN  
-- Backend counter via Azure Function + Table Storage  
-- Infrastructure managed with Terraform  
-- CI/CD via GitHub Actions  
-- Monitoring with Application Insights
+- Static site hosted via Azure Blob
+- Infrastructure managed and provisioned using Terraform
+- Mapped DNS Zone for custom domain
+- Enabled Azure Monitor and configured alerting with Logic Apps
+- Enforced tagging standards via Azure Policy
+- Applied Role-Based Access Control (RBAC) for scoped permissions
+- Attempted CDN
+
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Terraform (Azure Provider)  
-- Azure Storage + CDN  
-- Azure Function (Python/Node)  
-- Azure Table Storage  
-- GitHub Actions  
-- Application Insights
+- Terraform for infrastructure provisioning
+- Azure Blob Storage for static resume hosting
+- Azure DNS Zone for custom domain management
+- Azure Monitor, Log Analytics for observability
+- Logic Apps for alert automation
+- Azure Policy & RBAC for governance
+- GitHub for documentation and version control
+
 
 ---
 
 ## ✅ Tasks Completed
 
 ### Infrastructure
-- [x] Wrote Terraform config (`main.tf`, `variables.tf`)
-- [x] Deployed Storage Account, CDN, Azure Function
-- [x] Set up Table Storage for backend
+- [x] Wrote Terraform config (`main.tf`, `providers.tf`)
+- [x] Deployed Resource group and Storage Account
+- [ ] Attempted to connect Azure CDN to Storage Account
+- [x] Enabled static website in the storage account
+- [x] Configured DNS Zone for domain mapping
 
-### Backend
-- [x] Built Function to handle page view counter
-- [x] Connected Function to Table Storage
-- [x] Tested counter locally (Postman/CLI)
-
-### CI/CD + Monitoring
-- [x] Set up GitHub Actions for auto-deploy
-- [x] Integrated Application Insights
+### Monitoring & Alerts
+- [x] Enabled Azure Monitor + Log Analytics
+- [x] Created alert rules connected to Logic Apps
+- [x] Documented alert configuration and simulated triggers
+- [x] Prepared a metrics chart to visualize blob operations
+      
+### Governance & Security
+- [x] Applied RBAC roles for least-privileged access to operate on blobs
+- [x] Manually assigned Azure Policy to enforce Environment tag
+- [x] Validated tag compliance via Azure Portal
 
 ---
 
@@ -49,14 +58,12 @@ Deploying a resume website on Azure using Terraform, GitHub Actions, and Applica
 cloud-resume/
 ├── terraform/               
 │   ├── main.tf
-│   ├── provider.tf
-│   ├── outputs.tf
-|   └── variables.tf    
-
+|   └── provider.tf
+|
 ├── portfolio/              
 │   ├── index.html
-│   ├── secure-upload.html
-│   ├── style.css
+│   ├── secure-file.html
+│   ├── css/style.css
 │   └── images/             
 │
 ├── docs/
@@ -64,14 +71,7 @@ cloud-resume/
 │   ├── azure-static-website.md        
 │   ├── azure-cdn.md                    
 │   ├── monitor-alerts.md              
-│   ├── azure-policy.md
-|   ├── defender.md
-|   ├── cost-management.md 
-│   └── github-actions.md 
-│
-├── .github/
-│   └── workflows/
-│       └── deploy.yml
+│   └── azure-policy.md
 └── README.md               
 
 ```
@@ -83,13 +83,7 @@ cloud-resume/
 --- 
 ## 📸 Screenshots
 
-Located in [`docs/screenshots/`](docs/screenshots/), including:
-
-- Terraform apply success  
-- Live resume on Blob  
-- Function test via Postman  
-- GitHub Actions deploy log  
-- Application Insights traces  
+Located in [`docs/screenshots/`](docs/screenshots/)
 
 ---
 
@@ -97,5 +91,3 @@ Located in [`docs/screenshots/`](docs/screenshots/), including:
 
 - [Cloud Resume Challenge – Azure](https://cloudresumechallenge.dev/docs/the-challenge/azure/)  
 - [Terraform Azure Provider](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)  
-- [GitHub Actions Docs](https://docs.github.com/en/actions)  
-- [Application Insights Overview](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview)
