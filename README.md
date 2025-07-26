@@ -63,8 +63,10 @@ cloud-resume/
 |   ├── screenshots
 │   ├── azure-static-website.md        
 │   ├── azure-cdn.md                    
-│   ├── visitor-counter.md              
-│   ├── monitoring-alerts.md           
+│   ├── monitor-alerts.md              
+│   ├── azure-policy.md
+|   ├── defender.md
+|   ├── cost-management.md 
 │   └── github-actions.md 
 │
 ├── .github/
@@ -84,7 +86,7 @@ cloud-resume/
 Located in [`docs/screenshots/`](docs/screenshots/), including:
 
 - Terraform apply success  
-- Live resume on Blob + CDN  
+- Live resume on Blob  
 - Function test via Postman  
 - GitHub Actions deploy log  
 - Application Insights traces  
