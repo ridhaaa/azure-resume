@@ -77,6 +77,7 @@ cloud-resume/
 ## 🗺️ Architecture Diagram
 
 ![Architecture Diagram](portfolio/images/resume-architecture.png)
+`portfolio/images/resume-architecture.png`
 
 --- 
 🧭 Documentation Breakdown
