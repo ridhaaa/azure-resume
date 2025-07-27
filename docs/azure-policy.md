@@ -8,7 +8,7 @@ Implemented Azure Policies to ensure tag usage among all the deployed resources.
 - **Mode:** Indexed (automatic evaluation on supported resources)
 
 ### Initial Compliance states
-![Tag compliance](screenshots/intial-compliance.png)
+![Tag compliance](screenshots/policy-overview.png)
 
 ## 🏁 Outcome
 All resources passed compliance check and has `Environment` tag. Policy assignment now enforce these standards for future deployments.
